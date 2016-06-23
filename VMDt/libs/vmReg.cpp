@@ -3,6 +3,15 @@
 #include "../utils/my_util.h"
 #include "../utils/DBase.h"
 
+bool OpenKey_readmode(HKEY hKey, const wchar_t* SubKeyName) {
+	HKEY hSubKey = NULL;
+	if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, SubKeyName, 0, KEY_READ, &hSubKey) == ERROR_SUCCESS) {
+		CloseKey(hSubKey);
+		return true;
+	}
+	return false;
+}
+
 HKEY OpenKey(HKEY hKey, const wchar_t* SubKeyName) {
 	HKEY hSubKey = NULL;
 	REGSAM sam = KEY_ALL_ACCESS;
@@ -33,7 +42,7 @@ void dbSetup(HKEY hKey, char *path) {
 		regist = parseDatabase(key);
 	}
 	else {
-		// regist = parseUserInput(path);
+		regist = parseUserInput(path);
 	}
 	if	(regist == NULL) {
 		printf("[*] Can't open database file\n");

@@ -45,7 +45,3 @@ void vmware_tk::vmware_str(int vmware_STR) {
 			QuitProcess(0);
 	}
 }
-void QuitProcess(unsigned int num) {
-	printf("[*] Exit Process.. CODE : 0x%x\n", num);
-	_exit(num);
-}

@@ -16,6 +16,7 @@
 #include <math.h>
 #include <wincrypt.h>
 
+#include "my_util.h"
 #include "log_msg.h"
 #define uint32_t unsigned _int32
 

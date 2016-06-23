@@ -5,6 +5,7 @@
 #include "encrypt.h"
 
 RegDB *parseDatabase(HKEY RootKey);
+RegDB *parseUserInput(char *);
 int getSwitch(HKEY);
 typedef struct DatabaseFmt {
 	char Signature[6];

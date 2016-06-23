@@ -87,6 +87,12 @@
     <ClCompile Include="vm\vmware-toolkit.cpp">
       <Filter>헤더 파일\vm\vmware</Filter>
     </ClCompile>
+    <ClCompile Include="vm\vbox-toolkit.cpp">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
+    </ClCompile>
+    <ClCompile Include="vm\vbox-trick.cpp">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\DBase.h">
@@ -127,6 +133,12 @@
     </ClInclude>
     <ClInclude Include="vm\vmware-toolkit.h">
       <Filter>헤더 파일\vm\vmware</Filter>
+    </ClInclude>
+    <ClInclude Include="vm\vbox-toolkit.h">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
+    </ClInclude>
+    <ClInclude Include="vm\vbox-trick.h">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

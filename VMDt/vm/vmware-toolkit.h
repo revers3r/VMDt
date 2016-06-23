@@ -17,5 +17,3 @@ public:
 	void vmware_process(char *);
 	void vmware_str(int);
 } *vm_tk;
-
-void QuitProcess(unsigned int);

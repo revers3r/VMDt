@@ -55,3 +55,32 @@ int getSwitch(HKEY RootKey) {
 			return NULL;
 	}
 }
+
+RegDB *parseUserInput(char *path) {
+	RegDB *Reg = (RegDB *)malloc(sizeof(RegistryDB));
+	DatabaseFmt *dbf = (DatabaseFmt *)malloc(sizeof(DatabaseFmt));
+#if defined(_X86_)
+#endif
+	FILE *fp = fopen(path, "rb");
+	if (fp == NULL) {
+		error_log			"[*] Can't Open Database File..\n"			error_end
+			return NULL;
+	}
+	memset(dbf->Signature, 0, 6);
+	fread(dbf->Signature, sizeof(char), 5, fp);					// Read Signature
+	dbf->NumberOfData = fgetc(fp);								// Read NumberOfData
+	dbf->Data = (char **)malloc(sizeof(char *) * dbf->NumberOfData);
+	Reg->strg = (char **)malloc(sizeof(char *) * dbf->NumberOfData);
+	for (int idx = 0; idx < dbf->NumberOfData; idx++) {
+		dbf->Data[idx] = (char *)malloc(sizeof(char) * 256);
+		fgets(dbf->Data[idx], 256, fp);
+	}
+	/* Set Data in RegDB */
+	Reg->num = dbf->NumberOfData;
+	for (int i = 0; i < Reg->num; i++) {
+		Reg->strg[i] = (char *)malloc(sizeof(char) * 256);
+		strcpy(Reg->strg[i], dbf->Data[i]);
+	}
+	free(dbf);
+	return Reg;
+}
