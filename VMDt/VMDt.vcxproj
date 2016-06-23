@@ -157,7 +157,6 @@
     <ClCompile Include="utils\encrypt.cpp" />
     <ClCompile Include="utils\log_msg.cpp" />
     <ClCompile Include="utils\my_util.cpp" />
-    <ClCompile Include="vm\vmware-detect.cpp" />
     <ClCompile Include="vm\vmware-toolkit.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,7 +172,6 @@
     <ClInclude Include="utils\log_msg.h" />
     <ClInclude Include="utils\my_util.h" />
     <ClInclude Include="utils\vmdb.h" />
-    <ClInclude Include="vm\vmware-detect.h" />
     <ClInclude Include="vm\vmware-toolkit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

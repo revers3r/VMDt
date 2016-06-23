@@ -84,9 +84,6 @@
     <ClCompile Include="libs\str.cpp">
       <Filter>헤더 파일\libs\str</Filter>
     </ClCompile>
-    <ClCompile Include="vm\vmware-detect.cpp">
-      <Filter>헤더 파일\vm\vmware</Filter>
-    </ClCompile>
     <ClCompile Include="vm\vmware-toolkit.cpp">
       <Filter>헤더 파일\vm\vmware</Filter>
     </ClCompile>
@@ -127,9 +124,6 @@
     </ClInclude>
     <ClInclude Include="libs\str.h">
       <Filter>헤더 파일\libs\str</Filter>
-    </ClInclude>
-    <ClInclude Include="vm\vmware-detect.h">
-      <Filter>헤더 파일\vm\vmware</Filter>
     </ClInclude>
     <ClInclude Include="vm\vmware-toolkit.h">
       <Filter>헤더 파일\vm\vmware</Filter>
