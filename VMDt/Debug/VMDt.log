@@ -1,0 +1,12 @@
+﻿  vmware-toolkit.cpp
+d:\github\c\vmdt\vmdt\vmdt\vm\vmware-toolkit.cpp(27): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+  vmReg.cpp
+  str.cpp
+d:\github\c\vmdt\vmdt\vmdt\libs\str.cpp(6): warning C4409: 명령 크기가 잘못되었습니다.
+  ioport.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  DBase.cpp
+  main.cpp
+  코드를 생성하고 있습니다...
+  VMDt.vcxproj -> D:\github\C\VMDt\VMDt\Debug\VMDt.exe
