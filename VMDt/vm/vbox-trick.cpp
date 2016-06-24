@@ -39,3 +39,21 @@ bool vbox_trick::drive_chk(wchar_t *driver) {
 	}
 	return false;
 }
+bool vbox_trick::get_bios(wchar_t *bios_name) {
+	HKEY hKey = NULL;
+	if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, L"HARDWARE\\DESCRIPTION\\System",
+		0, KEY_READ, &hKey) == ERROR_SUCCESS) {
+		unsigned long type = 0, size = 0x100;
+		char* bios = (char*)LocalAlloc(LMEM_ZEROINIT, size + 10);
+		/* Read Key API */
+
+		return true;
+	}
+	return false;
+}
+bool vbox_trick::ipc_chk(wchar_t *ipc) {
+	if (handle_ret(ipc) != INVALID_HANDLE_VALUE) {
+		return true;
+	}
+	return false;
+}

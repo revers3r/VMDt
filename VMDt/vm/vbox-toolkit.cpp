@@ -32,3 +32,20 @@ bool vbox_tk::vbox_drive(wchar_t *drive_path) {
 	}
 	return true;
 }
+bool vbox_tk::vbox_bios(wchar_t *bios_name) {
+	if (vb_tk->get_bios(bios_name)) {
+		DETECT_START			"VirtualBox Detected"			DETECT_END
+			return false;
+	}
+	return true;
+}
+bool vbox_tk::vbox_ipc(wchar_t *ipc_name) {
+	if (vb_tk->ipc_chk(ipc_name)) {
+		DETECT_START			"VirtualBox Detected"			DETECT_END
+			return false;
+	}
+	return true;
+}
+void vbox_tk::closetk() {
+	free(vb_tk);
+}

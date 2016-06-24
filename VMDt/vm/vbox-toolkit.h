@@ -10,6 +10,9 @@ public:
 	bool vbox_provider(wchar_t *);
 	HKEY vbox_registry(HKEY, wchar_t *, unsigned int);
 	bool vbox_drive(wchar_t *);
+	bool vbox_bios(wchar_t *);
+	bool vbox_ipc(wchar_t *);
+	void closetk();
 private:
 	vbox_trick *vb_tk;
 }*vx_tk;
