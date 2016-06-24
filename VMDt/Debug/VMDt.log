@@ -1,22 +1,2 @@
-﻿  vbox-trick.cpp
-  vbox-toolkit.cpp
-  my_util.cpp
-  코드를 생성하고 있습니다...
-d:\github\c\vmdt\vmdt\vmdt\vm\vbox-toolkit.cpp(27): warning C4715: 'vbox_tk::vbox_registry': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  컴파일하고 있습니다...
-  vmware-toolkit.cpp
-d:\github\c\vmdt\vmdt\vmdt\vm\vmware-toolkit.cpp(24): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
-  log_msg.cpp
-  encrypt.cpp
-  DBase.cpp
-  main.cpp
-  vmReg.cpp
-  str.cpp
-d:\github\c\vmdt\vmdt\vmdt\libs\str.cpp(6): warning C4409: 명령 크기가 잘못되었습니다.
-  rdtsc.cpp
-  ioport.cpp
-  idt.cpp
-d:\github\c\vmdt\vmdt\vmdt\libs\idt.cpp(14): warning C4409: 명령 크기가 잘못되었습니다.
-  VMprocess.cpp
-  코드를 생성하고 있습니다...
+﻿  vbox-innotek.cpp
   VMDt.vcxproj -> D:\github\C\VMDt\VMDt\Debug\VMDt.exe

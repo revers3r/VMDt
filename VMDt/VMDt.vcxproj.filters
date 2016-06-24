@@ -93,6 +93,9 @@
     <ClCompile Include="vm\vbox-trick.cpp">
       <Filter>헤더 파일\vm\virtualbox</Filter>
     </ClCompile>
+    <ClCompile Include="vm\vbox-innotek.cpp">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\DBase.h">
@@ -138,6 +141,9 @@
       <Filter>헤더 파일\vm\virtualbox</Filter>
     </ClInclude>
     <ClInclude Include="vm\vbox-trick.h">
+      <Filter>헤더 파일\vm\virtualbox</Filter>
+    </ClInclude>
+    <ClInclude Include="vm\vbox-innotek.h">
       <Filter>헤더 파일\vm\virtualbox</Filter>
     </ClInclude>
   </ItemGroup>

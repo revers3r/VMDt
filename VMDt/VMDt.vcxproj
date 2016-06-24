@@ -157,6 +157,7 @@
     <ClCompile Include="utils\encrypt.cpp" />
     <ClCompile Include="utils\log_msg.cpp" />
     <ClCompile Include="utils\my_util.cpp" />
+    <ClCompile Include="vm\vbox-innotek.cpp" />
     <ClCompile Include="vm\vbox-toolkit.cpp" />
     <ClCompile Include="vm\vbox-trick.cpp" />
     <ClCompile Include="vm\vmware-toolkit.cpp" />
@@ -174,6 +175,7 @@
     <ClInclude Include="utils\log_msg.h" />
     <ClInclude Include="utils\my_util.h" />
     <ClInclude Include="utils\vmdb.h" />
+    <ClInclude Include="vm\vbox-innotek.h" />
     <ClInclude Include="vm\vbox-toolkit.h" />
     <ClInclude Include="vm\vbox-trick.h" />
     <ClInclude Include="vm\vmware-toolkit.h" />
