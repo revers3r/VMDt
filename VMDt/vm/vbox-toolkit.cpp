@@ -49,3 +49,21 @@ bool vbox_tk::vbox_ipc(wchar_t *ipc_name) {
 void vbox_tk::closetk() {
 	free(vb_tk);
 }
+bool vbox_tk::vbox_mac(unsigned char mac1, unsigned char mac2, unsigned char mac3) {
+	PIP_ADAPTER_INFO AdapterInfo;
+	DWORD dwBufLen = sizeof(AdapterInfo);
+	char *mac_addr = (char *)malloc(17);
+	AdapterInfo = (IP_ADAPTER_INFO *)malloc(sizeof(IP_ADAPTER_INFO));
+	if (GetAdaptersInfo(AdapterInfo, &dwBufLen) == NO_ERROR) {
+		PIP_ADAPTER_INFO pAdapterInfo = AdapterInfo;
+		if ((pAdapterInfo->Address[0] == mac1) && (pAdapterInfo->Address[1] == mac2) && (pAdapterInfo->Address[2] == mac3)) {
+			DETECT_START			"VirtualBox Detected"				DETECT_END
+			return false;
+		}
+	}
+	else {
+		return false;
+	}
+	
+return		true;
+}

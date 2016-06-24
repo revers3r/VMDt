@@ -15,6 +15,8 @@
 #include <string>
 #include <math.h>
 #include <wincrypt.h>
+#include <IPHlpApi.h>
+#include <assert.h>
 
 #include "my_util.h"
 #include "log_msg.h"
